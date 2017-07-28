@@ -1,0 +1,95 @@
+<div class="container" id="rest_single" ng-if="restaurant.name">
+  <div class="col-md-8 col-md-offset-2">
+    <img src="{{restaurant.image}}">
+    <div id="rest-white">
+      <div id="rest-name">{{restaurant.name}}</div>
+      <div id="rest-vote" class="pull-right">{{restaurant.vote}}</div>
+      <br>
+      <div id="rest-location">{{restaurant.location}}</div>
+      <div id="rest-category">{{restaurant.category}}</div>
+    </div>
+    <div id="details-wrapper">
+      <div class="col-md-6">
+        <div class="rest-heading">Cuisines</div>
+        <div id="rest-cuisine">{{restaurant.cuisines}}</div>
+        <div class="rest-heading">Cost for two</div>
+        <div id="rest-cost">₹{{restaurant.cost | number}}</div>
+      </div>
+      <div class="col-md-6">
+        <div class="rest-heading">Opening Hours</div>
+        <div id="rest-time">{{restaurant.hours}}</div>
+        <div class="rest-heading">Address</div>
+        <div id="rest-address">{{restaurant.address}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- /*<style>
+    ul {
+      list-style: none;
+      }
+
+    ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+    ul li{
+      background-color: green;
+      display: inline-block;
+      width: 150px;
+      padding: 10px;
+      margin-top: 5px;
+      text-align: center;
+      position: relative;
+    }
+
+    ul li ul{
+      position: absolute;
+      left: 0;
+      top: 40px;
+    }
+    ul li ul li{
+      display: none;
+      background-color: orange;
+    }
+
+    ul li:hover ul li{
+      display: block;
+    }
+
+
+  </style>
+
+
+<ul>
+  <li><a href="#">dsbf</a>
+    <ul>
+      <li><a href="#">dsbf1</a></li>
+      <li><a href="#">dsbf2</a></li>
+      <li><a href="#">dsbf3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">dsbf</a>
+    <ul>
+      <li><a href="#">dsbf1</a></li>
+      <li><a href="#">dsbf2</a></li>
+      <li><a href="#">dsbf3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">dsbf</a></li>
+  <li><a href="#">dsbf</a></li>
+  <li><a href="#">dsbf</a>
+    <ul>
+      <li><a href="#">dsbf1</a></li>
+      <li><a href="#">dsbf2</a></li>
+      <li><a href="#">dsbf3</a></li>
+    </ul>
+  </li>
+</ul>*/ -->
