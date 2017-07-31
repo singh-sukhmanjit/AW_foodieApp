@@ -182,3 +182,16 @@ input.ng-valid {
 #rest-cuisine{
   color: #cb202d;
 }
+
+.speciality{
+  color: #cb202d;
+}
+
+#rest-special .button {
+    display: inline-block;
+    background-color:#cb202d;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

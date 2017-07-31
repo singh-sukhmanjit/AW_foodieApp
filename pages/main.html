@@ -18,12 +18,15 @@
           <div ng-repeat="i in restaurants | filter: query">
             <div class="col-md-4 rest_list">
               <a ng-href="#!/restaurant/{{i.id}}">
-                <img src="{{i.image}}">
+                <img ng-src="{{i.image}}">
                 <div class="vote">{{i.vote}}</div>
                 <div class="white_box">
                   <div class="name">{{i.name}}</div>
                   <div class="address">{{i.address | uppercase}}</div>
-                  <div class="cuisine">{{i.cuisines}}</div>
+                  <div class="cuisine">{{i.cuisines}}
+                    <span class="speciality" ng-if="i.bestDish">Recommended: {{i.bestDish.name}}</span>
+                  </div>
+
                 </div>
               </a>
             </div>
